@@ -1,6 +1,11 @@
 import React, { Component } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
+
+import Navigation from "./components/navbar.component";
 import Articles from "./components/Articles";
 import CreateArticle from "./components/create-article.component";
+import Footer from "./components/footer.component";
 
 class App extends Component {
   state = {
@@ -46,13 +51,17 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>My Blog</h1>
-        <p>Welcome</p>
-        <Articles
-          deleteArticle={this.deleteArticle}
-          articles={this.state.articles}
-        />
-        <CreateArticle addArticle={this.addArticle} />
+        <Navigation />
+        <main>
+          <h1>My Blog</h1>
+          <p>Welcome</p>
+          <Articles
+            deleteArticle={this.deleteArticle}
+            articles={this.state.articles}
+          />
+          <CreateArticle addArticle={this.addArticle} />
+        </main>
+        <Footer />
       </div>
     );
   }
