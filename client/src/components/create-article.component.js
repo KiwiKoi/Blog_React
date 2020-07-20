@@ -79,6 +79,7 @@ class AddArticle extends Component {
               id="contents"
               name="contents"
               type="text"
+              rows="10"
               required
               className="form-control"
               value={this.state.contents}
