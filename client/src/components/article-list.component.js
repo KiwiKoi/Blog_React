@@ -36,7 +36,7 @@ export default class ArticleList extends Component {
 
   componentDidMount() {
     axios
-      .get("https://https://blog-react-practice.herokuapp.com/articles")
+      .get("https://blog-react-practice.herokuapp.com/articles")
       //"http://localhost:8080/articles"
       .then((response) => {
         this.setState({
@@ -51,7 +51,7 @@ export default class ArticleList extends Component {
   // Delete article
   deleteArticle(id) {
     axios
-      .delete("https://https://blog-react-practice.herokuapp.com/articles" + id)
+      .delete("https://blog-react-practice.herokuapp.com/articles" + id)
       //http://localhost:8080/articles/
       .then((res) => console.log(res.data));
     this.setState({
