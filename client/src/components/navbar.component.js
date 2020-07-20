@@ -1,7 +1,7 @@
 import React from "react";
 import { Nav, Navbar } from "react-bootstrap";
 
-const Navigation = () => {
+function Navigation() {
   return (
     <div>
       <Navbar bg="dark" variant="dark" expand="lg">
@@ -16,6 +16,6 @@ const Navigation = () => {
       </Navbar>
     </div>
   );
-};
+}
 
 export default Navigation;
