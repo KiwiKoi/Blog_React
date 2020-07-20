@@ -46,7 +46,7 @@ class AddArticle extends Component {
     console.log(article);
 
     axios
-      .post("https://blog-react-practice.herokuapp.com/add", article)
+      .post("https://blog-react-practice.herokuapp.com/articles/add", article)
       //"http://localhost:8080/articles/add"
       .then((res) => console.log(res.data));
 
